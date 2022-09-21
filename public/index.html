@@ -30,11 +30,15 @@
 </head>
 <body>
 <div class="wrap">
-    <iframe id="iframe" src="http://192.168.10.85:3000/d/m-3Y5Bz4xa/changex-community?orgId=1&refresh=1m" frameBorder="0"></iframe>
+    <iframe id="iframe" src="https://grafana.changex.io/d/m-3Y5Bz4xb/changex?orgId=1&refresh=1m" frameBorder="0"></iframe>
 </div>
 </body>
 </html>
 <script>
+
+    const grafana = 'https://grafana.changex.io/d/m-3Y5Bz4xb/changex?orgId=1&refresh=1m';
+    document.getElementById('iframe').setAttribute('src', grafana);
+
     document.oncontextmenu = function(e){
         e.preventDefault();
     }
