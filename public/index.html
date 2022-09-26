@@ -18,26 +18,26 @@
             width:100%;
             top:0;
             height:100%;
-            pointer-events: none;
         }
         iframe {
             display: block;
             width:100%;
             height:100%;
-            pointer-events: none
         }
+
     </style>
 </head>
 <body>
 <div class="wrap">
-    <iframe id="iframe" src="https://grafana.changex.io/d/m-3Y5Bz4xb/changex?orgId=1&refresh=1m" frameBorder="0"></iframe>
+    <iframe id="iframe" frameBorder="0"></iframe>
 </div>
 </body>
 </html>
 <script>
 
     const grafana = 'https://grafana.changex.io/d/m-3Y5Bz4xb/changex?orgId=1&refresh=1m';
-    document.getElementById('iframe').setAttribute('src', grafana);
+    const iFrame = document.getElementById('iframe');
+    iFrame.setAttribute('src', grafana);
 
     document.oncontextmenu = function(e){
         e.preventDefault();
