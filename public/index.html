@@ -35,7 +35,8 @@
 </html>
 <script>
 
-    const grafana = 'https://grafana.changex.io/d/m-3Y5Bz4xb/changex?orgId=1&refresh=1m';
+    const grafana = 'https://grafana.changex.io/d/m-3Y5Bz4xb/changex?orgId=1&refresh=1m&from=now-30d&to=now';
+
     const iFrame = document.getElementById('iframe');
     iFrame.setAttribute('src', grafana);
 
